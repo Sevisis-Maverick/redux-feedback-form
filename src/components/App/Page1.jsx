@@ -38,7 +38,7 @@ class Page1 extends Component {
                 <br />
                 <br />
 
-                <label htmlFor='feelingInput'>How are you feeling today fam?</label>
+                <label htmlFor='feelingInput'>So, how do you feel today? Not that I care or anything.</label>
                 <input type='number' id='feelingInput' name='feelingInput' min='1' max='5' onChange={this.handleChange}></input>
 
             </>

@@ -27,6 +27,10 @@ class Page2 extends Component {
         });
     };
 
+    // goBack = () => {
+    //     this.props.history.push('/page1');
+    // }
+
     render() {
         return (
             <>
@@ -34,12 +38,18 @@ class Page2 extends Component {
                 <h1>Page 2</h1>
 
                 <NavLink to='/page3'><button onClick={this.onSubmit}>Next</button></NavLink>
+                
 
                 <br />
                 <br />
 
-                <label htmlFor='understandingInput'>How well do you understand the content homie?</label>
+                <label htmlFor='understandingInput'>How much of the content do you understand? I don't expect much.</label>
                 <input type='number' id='understandingInput' name='understandingInput' min='1' max='5' onChange={this.handleChange}></input>
+
+                {/* <br />
+                <br />
+
+                <button onClick={this.goBack}>Back</button> */}
 
             </>
         );

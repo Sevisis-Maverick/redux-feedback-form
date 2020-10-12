@@ -27,6 +27,10 @@ class Page4 extends Component {
           });
     };
 
+    // goBack = () => {
+    //     this.props.history.push('/page3');
+    // }
+
     render() {
         return (
             <>
@@ -38,8 +42,13 @@ class Page4 extends Component {
                 <br />
                 <br />
 
-                <label htmlFor='commentInput'>Any comments you would like to voice G?</label>
+                <label htmlFor='commentInput'>Got any comments? Leave your complaints here, so I can ignore them.</label>
                 <input type='text' id='commentInput' name='commentInput' onChange={this.handleChange} />
+
+                {/* <br />
+                <br />
+
+                <button onClick={this.goBack}>Back</button> */}
 
             </>
         );

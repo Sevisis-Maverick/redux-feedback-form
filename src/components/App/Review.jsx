@@ -4,23 +4,55 @@ import { connect } from 'react-redux';
 
 class Review extends Component {
 
+    state = {
+        feedbackForm: [{
+            feelingInput: null,
+            understandingInput: null,
+            supportInput: null,
+            commentInput: '',
+        }]
+    }
 
-    
+    onTest = () => {
+        console.log(this.props.store.inputReducer)
+        console.log(this.props.store.inputReducer.feelingInput)
+    }
+
+    onSubmit = () => {
+        //Axios request sending data to server
+    }
+
+    // goBack = () => {
+    //     this.props.history.push('/page4');
+    //     this.props.dispatch({ type: "RESET_COMMENT" });
+    // }
+
     render() {
         return (
             <>
 
-            <h1>Review</h1>
+                <h1>Review</h1>
 
-            <p>If your information is complete, hit "submit", and you're done!</p>
+                <p>Congratulations, your review is complete. Now hit "submit" so we can be done.</p>
 
-            <NavLink to='/complete'><button>Submit</button></NavLink>
+                <NavLink to='/complete'><button>Submit</button></NavLink>
+
+                <br />
+
+                <button onClick={this.onTest}>A test button, you know, for testing purposes</button>
+
+                {/* <br />
+                <br />
+
+                <button onClick={this.goBack}>Back</button> */}
 
             </>
         );
     }
 }
 
-// CONNECT THE STORE
+const mapStateToProps = (store) => ({
+    store,
+})
 
-export default connect() (Review);
+export default connect(mapStateToProps)(Review);

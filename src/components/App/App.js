@@ -10,13 +10,15 @@ import Page3 from './Page3'
 import Page4 from './Page4'
 import Review from './Review'
 import Complete from './Complete'
+import Admin from './Admin'
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title"><i>Digital Sevisis Feedback Form</i></h1>
+          <h1 className="App-title"><i>Sevisis Fullstack Feedback Form</i></h1>
         </header>
         <br />
 
@@ -37,6 +39,7 @@ class App extends Component {
             <Route path='/page4' component={Page4} />
             <Route path='/review' component={Review} />
             <Route path='/complete' component={Complete} />
+            <Route path='/admin' component={Admin} />
           </Switch>
         </Router>
 
