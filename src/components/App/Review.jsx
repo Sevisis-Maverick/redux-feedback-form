@@ -30,7 +30,7 @@ class Review extends Component {
             supportInput: this.props.store.inputReducer[2],
             commentInput: this.props.store.inputReducer[3],
         }).then(() => console.log('it works')
-        ).catch((err) => console.log('fuck'))
+        ).catch((err) => console.log('nice'))
     };
 
     // goBack = () => {
@@ -44,13 +44,13 @@ class Review extends Component {
 
                 <h1>Review</h1>
 
-                <p>Congratulations, your review is complete. Now hit "submit" so we can be done.</p>
+                <p>Your review complete!</p>
 
                 <NavLink to='/complete'><button onClick={this.onSubmit}>Submit</button></NavLink>
 
                 <br />
 
-                <button onClick={this.onTest}>A test button, you know, for testing purposes</button>
+                {/* <button onClick={this.onTest}>A test button</button> */}
 
                 {/* <br />
                 <br />

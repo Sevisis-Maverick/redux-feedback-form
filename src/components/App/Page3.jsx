@@ -42,7 +42,7 @@ class Page3 extends Component {
                 <br />
                 <br />
 
-                <label htmlFor='supportInput'>How well do you feel supported, did we do a good job? Somehow, I doubt it.</label>
+                <label htmlFor='supportInput'>How well do you feel supported?</label>
                 <input type='number' id='supportInput' name='supportInput' min='1' max='5' onChange={this.handleChange}></input>
 
                 {/* <br />

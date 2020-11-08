@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title"><i>Sevisis Fullstack Feedback Form</i></h1>
+          <h1 className="App-title"><i>Fullstack Feedback Form</i></h1>
         </header>
         <br />
 

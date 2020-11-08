@@ -22,9 +22,9 @@ class Complete extends Component {
         return (
             <>
 
-                <h2>Thanks for nothing.</h2>
+                <h2>Thank you for your time!</h2>
 
-                <p>Your data has been submitted. Now please go away. Or submit another review, I guess.</p>
+                <p>Your data has been submitted into our database. Thank you for taking part of our program.</p>
 
                 <NavLink to='/'><button onClick={this.resetInputs}>Take another survey</button></NavLink>
 

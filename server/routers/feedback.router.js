@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
             res.send('Database recieved the humans survey results!').status(201);
         })
         .catch(error => {
-            console.log('Your human somehow fucked up.', error)
+            console.log('nice.', error)
             res.sendStatus(418);
         });
 });

@@ -42,7 +42,7 @@ class Page4 extends Component {
                 <br />
                 <br />
 
-                <label htmlFor='commentInput'>Got any comments? Leave your complaints here, so I can ignore them.</label>
+                <label htmlFor='commentInput'>Would you like to leave any additional comments?</label>
                 <input type='text' id='commentInput' name='commentInput' onChange={this.handleChange} />
 
                 {/* <br />

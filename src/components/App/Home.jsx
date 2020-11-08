@@ -9,9 +9,9 @@ class Home extends Component {
         return (
             <>
 
-            <h1>Digital Sevisis Narcissistic Survey</h1>
+            <h1>Checkin Survey</h1>
 
-            <NavLink to='/page1'><button>Start Survey</button></NavLink>
+            <NavLink to='/page1'><button>Begin</button></NavLink>
 
             </>
         );

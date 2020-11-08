@@ -43,7 +43,7 @@ class Page2 extends Component {
                 <br />
                 <br />
 
-                <label htmlFor='understandingInput'>How much of the content do you understand? I don't expect much.</label>
+                <label htmlFor='understandingInput'>Do you understand this weeks content?</label>
                 <input type='number' id='understandingInput' name='understandingInput' min='1' max='5' onChange={this.handleChange}></input>
 
                 {/* <br />
